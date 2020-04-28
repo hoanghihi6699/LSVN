@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Pacifico&display=swap');
+
+body{
+  font-size: 14;
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* Navigation */
+#nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#navbar .container ul li{
+  padding: 0 10px;
+}
+
+#navbar .container ul li a{
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 2px 1px #fff;
+}
+
+.navbar-nav ul li a{
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover{
+  color: #BD3829!important;
+}
+
+#navbar .navbar a.navbar-brand span{
+  font-family: 'Pacifico', cursive;
+  font-family: 'Charmonman', cursive;
+  font-weight: 600;
+  font-size: 36px;
+  margin-left: 20px;
+}
+
+#navbar .navbar a.navbar-brand img{
+  height: 60px;
+  margin-left: 20px;
+}
+
+.navbar-toggler{
+  border: none!important;
+}
+
+  /* End Nav */
+
+/* Content 1 */
+#content1{
+margin-top: 80px;
+}
+#content1{
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #555;
+}
+
+#content1{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/image/hong-bang-thi.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef!important;
+  background-attachment: fixed;
+  padding-top: 2px;
+  padding-bottom: 50px;
+  height: 600px;
+}
+
+#content1 h1{
+  text-align: center;
+  color: #efefef!important;
+  padding-bottom: 10px;
+}
+
+#content1 h3::after{
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+#content1 h3{
+  line-height: 0.2;
+}
+
+#content1 .row{
+  padding-top: 70px;
+}
+
+.content1 a{
+  color: #ccc;
+}
+
+
+#content1 p{
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ccc;
+  text-align: justify;
+}
+
+.content1 .col-md-3:hover{
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+}
