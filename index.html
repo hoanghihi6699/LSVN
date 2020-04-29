@@ -6,34 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <title>LỊCH SỬ VIỆT NAM</title>
 </head>
 
-<body onscroll="navScroll();">
+<body data-spy="scroll" data-target="#nav-scroll">
     <section id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav-scroll">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo/suviet.png" alt=""><span>Sử Việt</span></a>
+                <a class="navbar-brand" id="logo" href="#"><img src="img/logo/suviet.png" alt=""><span>Sử
+                        Việt</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dong-lich-su">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SỰ KIỆN</a>
+                            <a class="nav-link" href="#dong-lich-su">DÒNG LỊCH SỬ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">NHÂN VẬT</a>
+                            <a class="nav-link" href="#su-kien">SỰ KIỆN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nhan-vat">NHÂN VẬT</a>
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CÂU CHUYỆN</a>
+                            <a class="nav-link" href="#cau-chuyen">CÂU CHUYỆN</a>
 
                         </li>
                     </ul>
@@ -42,38 +47,423 @@
         </nav>
     </section>
 
-    <section id="content1">
-        <div class="container">
-            <div class="col-12">
-                <ul class="progressbar">
-                    <li class="active">HỒNG BÀNG & VĂN LANG</li>
-                    <li class="">hellohihi1</li>
-                    <li class="">hellohihi2</li>
-                </ul>
+    <section class="timeline-carousel mt-2" id="dong-lich-su">
+            
+        <h1>Dòng chảy lịch sử</h1>
+        <div class="timeline-carousel__item-warapper" data-js="timeline-carousel">
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Hồng Bàng & Văn Lang</span>
+                    <span class="month">2879 TCN - 258 TCN</span>
+                    <p class="label_title">Thời kỳ Hồng Bàng theo truyền thuyết và dã sử cho rằng bắt đầu từ năm 2879
+                        TCN, là niên đại của
+                        Kinh Dương Vương, với quốc hiệu Xích Quỷ. Lãnh thổ của quốc gia dưới thời Kinh Dương vương rộng
+                        lớn, phía bắc tới sông Dương Tử (cả vùng hồ Động Đình), phía nam tới nước Hồ Tôn (Chiêm Thành),
+                        phía đông là Đông Hải (một phần của Thái Bình Dương), phía tây là Ba Thục (Tứ Xuyên, Trung Hoa
+                        ngày nay). Về sau người Việt chỉ thấy có ở miền Bắc Việt Nam ngày nay, có thể một phần do sự lấn
+                        áp của các tộc người Hoa Hạ từ phương Bắc.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
             </div>
-            <div class="row content1">
-                <a href="#">
-                    <h3>HỒNG BÀNG & VĂN LANG</h3>
-                </a>
-                <p>Thời kỳ Hồng Bàng theo truyền thuyết và dã sử cho rằng bắt đầu từ năm 2879 TCN, là niên đại của Kinh
-                    Dương Vương, với quốc hiệu Xích Quỷ. Lãnh thổ của quốc gia dưới thời Kinh Dương vương rộng lớn, phía
-                    bắc tới sông Dương Tử (cả vùng hồ Động Đình), phía nam tới nước Hồ Tôn (Chiêm Thành), phía đông là
-                    Đông Hải (một phần của Thái Bình Dương), phía tây là Ba Thục (Tứ Xuyên, Trung Hoa ngày nay). Về sau
-                    người Việt chỉ thấy có ở miền Bắc Việt Nam ngày nay, có thể một phần do sự lấn áp của các tộc người
-                    Hoa Hạ từ phương Bắc.</p>
 
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/hong-bang-thi.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Âu Lạc & Nam Việt</span>
+                    <span class="month">258 TCN</span>
+                    <p class="label_title">Theo hai bộ sử ký Đại Việt sử ký toàn thư (viết ở thế kỷ 15) và Đại Việt sử
+                        lược (viết ở thế kỷ
+                        13), thì nhà nước Âu Lạc được Thục Phán (thủ lĩnh bộ tộc Âu Việt) thành lập vào năm 258 TCN sau
+                        khi đánh bại vị vua Hùng cuối cùng của nước Văn Lang, ông lên ngôi và lấy niên hiệu là An Dương
+                        Vương.
+
+                        An Dương Vương sát nhập lãnh thổ của Văn Lang và lãnh thổ của bộ tộc mình (Âu Việt) và hình
+                        thành nên một nhà nước mới là Âu Lạc (kết hợp giữa người Âu Việt và người Lạc Việt)</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
             </div>
 
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title">Thời kỳ Bắc thuộc lần thứ nhất trong lịch sử Việt Nam kéo dài từ năm 218 TCN
+                        hoặc 179 TCN hoặc 111 TCN đến năm 39, dưới sự cai trị của phong kiến Trung Quốc.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/hong-bang-thi.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Trưng Nữ Vương</span>
+                    <span class="month">40 - 4343</span>
+                    <p class="label_title">Hai Bà Trưng (40 - 43) là thời kỳ xen giữa Bắc thuộc lần 1 và Bắc thuộc lần 2
+                        trong lịch sử Việt Nam. Đây là tên gọi chung của hai chị em Trưng Trắc và Trưng Nhị, là anh hùng
+                        dân tộc của người Việt, những thủ lĩnh khởi binh chống lại nhà Đông Hán của Trung Quốc, lập ra
+                        một quốc gia với kinh đô tại Mê Linh và tự phong là Nữ vương.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần II</span>
+                    <span class="month">43 -543</span>
+                    <p class="label_title">Thời kỳ Bắc thuộc lần thứ hai trong lịch sử Việt Nam kéo dài từ năm 43 đến
+                        năm 543. Thời kỳ này bắt đầu khi Mã Viện theo lệnh Hán Quang Vũ Đế nhà Đông Hán đánh chiếm lại
+                        bộ Giao Chỉ từ tay Trưng Vương, kéo dài đến khi Lý Bí khởi binh đánh đuổi thứ sử[1] nhà Lương là
+                        Tiêu Tư năm 542 rồi lập ra nước Vạn Xuân năm 544.
+
+                        Thời kỳ Bắc thuộc lần thứ 2 kéo dài khoảng 500 năm.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">Bắc thuộc lần I</span>
+                    <span class="month">218 TCN - 39 SCN</span>
+                    <p class="label_title"></p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!--/Timeline item-->
         </div>
     </section>
+    <section class="timeline-carousel" id="su-kien">
+        <h1>Dòng chảy lịch sử</h1>
+        <div class="timeline-carousel__item-warapper" data-js="timeline-carousel">
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">1914</span>
+                    <span class="month">June 28</span>
+                    <p>Assassination of Archduke Franz Ferdinand of Austria, heir to the
+                        Austro-Hungarian throne, who was killed in Sarajevo along with his wife
+                        Duchess Sophie by Bosnian Serb Gavrilo Princip.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/hong-bang-thi.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <div class="pointer"></div>
+                    <span class="month">July 5 </span>
+                    <p>Austria-Hungary seeks German support for a war against Serbia in case of
+                        Russian militarism. Germany gives assurances of support.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">1915</span>
+                    <span class="month">January 2</span>
+                    <p>The Russian offensive in the Carpathians begins. It will continue until April
+                        12. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/hong-bang-thi.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <div class="pointer"></div>
+                    <span class="month">January 18–19 </span>
+                    <p>Battle of Jassin. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">1916</span>
+                    <span class="month">January 5–17</span>
+                    <p>Austro-Hungarian offensive against Montenegro, which capitulates. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <div class="pointer"></div>
+                    <span class="month">January 6–7 </span>
+                    <p>Battle of Mojkovac. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!--/Timeline item-->
+        </div>
+    </section>
+    <section class="timeline-carousel" id="nhan-vat">
+        <h1>Dòng chảy lịch sử</h1>
+        <div class="timeline-carousel__item-warapper" data-js="timeline-carousel">
+            <!--Timeline item-->
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">1914</span>
+                    <span class="month">June 28</span>
+                    <p>Assassination of Archduke Franz Ferdinand of Austria, heir to the
+                        Austro-Hungarian throne, who was killed in Sarajevo along with his wife
+                        Duchess Sophie by Bosnian Serb Gavrilo Princip.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/hong-bang-thi.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <div class="pointer"></div>
+                    <span class="month">July 5 </span>
+                    <p>Austria-Hungary seeks German support for a war against Serbia in case of
+                        Russian militarism. Germany gives assurances of support.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">1915</span>
+                    <span class="month">January 2</span>
+                    <p>The Russian offensive in the Carpathians begins. It will continue until April
+                        12. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/hong-bang-thi.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <div class="pointer"></div>
+                    <span class="month">January 18–19 </span>
+                    <p>Battle of Jassin. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/trungnuvuong.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <span class="year">1916</span>
+                    <span class="month">January 5–17</span>
+                    <p>Austro-Hungarian offensive against Montenegro, which capitulates. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="timeline-carousel__item">
+                <div class="timeline-carousel__image">
+                    <div class="media-wrapper media-wrapper--overlay"
+                        style="background: url('img/image/aulac-namviet.jpg') center center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="timeline-carousel__item-inner">
+                    <div class="pointer"></div>
+                    <span class="month">January 6–7 </span>
+                    <p>Battle of Mojkovac. </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+            <!--/Timeline item-->
+        </div>
+    </section>
+
 
     <section id="content3">
         <h3>hllo</h3>
     </section>
 
+    <script>
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/js.js"></script>

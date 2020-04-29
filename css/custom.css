@@ -14,6 +14,8 @@ body{
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: #1d1d1e;
+  margin-bottom: 20px;
 }
 
 #navbar .container ul li{
@@ -23,7 +25,6 @@ body{
 #navbar .container ul li a{
   font-size: 22px;
   font-weight: 600;
-  text-shadow: 2px 1px #fff;
 }
 
 .navbar-nav ul li a{
@@ -41,6 +42,7 @@ body{
   font-weight: 600;
   font-size: 36px;
   margin-left: 20px;
+  vertical-align: -8px;
 }
 
 #navbar .navbar a.navbar-brand img{
@@ -50,9 +52,12 @@ body{
 
 .navbar-toggler{
   border: none!important;
+  S
 }
 
   /* End Nav */
+
+
 
 /* Content 1 */
 #content1{
