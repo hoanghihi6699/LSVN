@@ -125,9 +125,6 @@ body{
 
 
 /* Content 1 */
-#content1{
-margin-top: 20px;
-}
 
 .carousel-item {
   height: 600px;
@@ -312,6 +309,8 @@ margin-top: 20px;
 .jumbotron{
   background-color: rgb(255, 255, 255);
   color: #1e1e1e;
+  height: 200px;
+  padding-top: 30px;
 }
 
 .jumbotron h2{
