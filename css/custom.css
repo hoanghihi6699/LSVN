@@ -41,6 +41,7 @@ body{
   margin: 0;
   padding: 0;
   position: sticky;
+  background-color: #1e1e1e;
 }
 
 #navbar .container ul li{
@@ -155,7 +156,7 @@ margin-top: 20px;
   color: #fff!important;
   background-attachment: fixed;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 60px;
   font-size: 38px;
 }
 
@@ -186,7 +187,7 @@ margin-top: 20px;
   height: 400px;
   background-color: #000;
   box-shadow: 0 30px 30px rgba(0,0,0,0.8);
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .imgbox{
@@ -282,13 +283,14 @@ margin-top: 20px;
 /* content 3 */
 
 #content3{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/image/hong-bang-thi.jpg);
+  background-image: linear-gradient(rgba(94, 94, 94, 0.8),rgba(94, 94, 94, 0.8)),url(img/image/hong-bang-thi.jpg);
   background-size: cover;
   background-position: center;
   color: #fff!important;
   background-attachment: fixed;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 60px;
   font-size: 38px;
 }
 
@@ -308,7 +310,12 @@ margin-top: 20px;
 }
 
 .jumbotron{
-  background-color: #555;
+  background-color: rgb(255, 255, 255);
+  color: #1e1e1e;
+}
+
+.jumbotron h2{
+  color: #1e1e1e;
 }
 
 /* Content4 */
@@ -339,6 +346,10 @@ margin-top: 20px;
 }
 
 /* Footer */
+
+#footer{
+  background-color: #1e1e1e;
+}
 
 #footer h2, #footer p{
   color: #fff;
