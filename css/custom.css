@@ -7,15 +7,40 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Baloo Bhaina 2', cursive;
+  overflow-x: hidden;
 }
+
+/* @media (min-width: 768px) {
+  .container {
+      width: 300px;
+  }
+  .container {
+      width: 1409px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 1409px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1409px;
+  }
+} */
+
 
 /* Navigation */
 #nav-bar{
-  position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #1d1d1e;
   margin-bottom: 20px;
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  position: sticky;
 }
 
 #navbar .container ul li{
@@ -45,78 +70,331 @@ body{
   vertical-align: -8px;
 }
 
+.headpage{
+  margin-top: 100px!important;
+}
+
 #navbar .navbar a.navbar-brand img{
   height: 60px;
-  margin-left: 20px;
+  margin: 10px 15px;
 }
 
-.navbar-toggler{
-  border: none!important;
-  S
-}
 
   /* End Nav */
+
+  /*///*/
+  .h2-an h2::after{
+    content: "";
+    background: #b38c52;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+  }
+
+  .read-more{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    color: #b38c52;
+    display: table;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .read-more::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    border-bottom: 2px solid #b38c52;
+    -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  }
+  
+  .read-more:hover::after{
+    width: 100%;
+  }
+
+  /*///*/
 
 
 
 /* Content 1 */
 #content1{
-margin-top: 80px;
-}
-#content1{
-  padding-top: 80px;
-  padding-bottom: 20px;
-  color: #555;
+margin-top: 20px;
 }
 
-#content1{
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/image/hong-bang-thi.jpg);
+.carousel-item {
+  height: 600px;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+/* Content2 */
+#content2{
+  background-image: linear-gradient(rgba(61, 61, 61, 0.8),rgba(61, 61, 61, 0.8)),url(img/image/hong-bang-thi.jpg);
   background-size: cover;
   background-position: center;
-  color: #efefef!important;
+  color: #fff!important;
   background-attachment: fixed;
-  padding-top: 2px;
-  padding-bottom: 50px;
-  height: 600px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 38px;
 }
 
-#content1 h1{
+#content2 h1{
   text-align: center;
-  color: #efefef!important;
+  color: #fff!important;
   padding-bottom: 10px;
 }
 
-#content1 h3::after{
+#content2 h1::after{
   content: "";
-  background: #efefef;
+  background: #b38c52;
   display: block;
   height: 3px;
   width: 170px;
   margin: 20px auto 5px;
 }
 
-#content1 h3{
-  line-height: 0.2;
+.container-fluid{
+  padding-right: 170px!important;
+  margin-left: 15px;
+  padding: 20px 120px 60px;
 }
 
-#content1 .row{
-  padding-top: 70px;
+.box{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  box-shadow: 0 30px 30px rgba(0,0,0,0.8);
+  margin-bottom: 30px;
 }
 
-.content1 a{
-  color: #ccc;
+.imgbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
+.box .imgbox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
 
-#content1 p{
+.box:hover .imgbox img{
+  opacity: 0;
+}
+
+.box .content-box{
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.box:hover .content-box{
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.box .content-box h3{
+  margin: 0;
+  padding: 0;
   font-size: 18px;
-  margin-top: 20px;
-  color: #ccc;
+  color: #000;
+}
+
+.box .content-box p{
+  color: #555;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
   text-align: justify;
 }
 
-.content1 .col-md-3:hover{
-  background: #007bff;
-  cursor: pointer;
-  transition: 0.7s;
+.box:hover .content-box p{
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.box .content-box .read-more{
+  font-size: 12px;
+  color: #b38c52;
+  display: table;
+  margin-bottom: 10px;
+  font-weight: 900;
+  text-decoration: none;
+  position: relative;
+}
+
+.box .content-box .read-more::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  border-bottom: 2px solid #b38c52;
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.box .content-box .read-more:hover::after{
+  width: 100%;
+}
+
+/* content 3 */
+
+#content3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/image/hong-bang-thi.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff!important;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 38px;
+}
+
+#content3 h1{
+  text-align: center;
+  color: #fff!important;
+  padding-bottom: 10px;
+}
+
+#content3 h1::after{
+  content: "";
+  background: #b38c52;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.jumbotron{
+  background-color: #555;
+}
+
+/* Content4 */
+#content4{
+  background-image: linear-gradient(rgba(61, 61, 61, 0.8),rgba(61, 61, 61, 0.8)),url(img/image/hong-bang-thi.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff!important;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 38px;
+}
+
+#content4 h1{
+  text-align: center;
+  color: #fff!important;
+  padding-bottom: 10px;
+}
+
+#content4 h1::after{
+  content: "";
+  background: #b38c52;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+/* Footer */
+
+#footer h2, #footer p{
+  color: #fff;
+}
+
+#footer span{
+  font-family: 'Pacifico', cursive;
+  font-family: 'Charmonman', cursive;
+  font-size: 48px;
+  color: #fff;
+}
+
+#footer .btn{
+  color: #b38c52!important;
+  border: 1px solid #b38c52!important;
+}
+
+#footer .btn:hover{
+  color: #ccc!important;
+  font-weight: 600;
+}
+
+/* Main1 */
+#main1{
+  margin: 20px;
+  color: #fff;
+}
+
+#main1 h2{
+  color: #fff;
+}
+
+#main1 h3 {
+  color: #fff;
+}
+
+#main1 p{
+  text-align: justify;
+  line-height: 30px;
+}
+
+#main1 .list-group{
+  background-color: #555;
+}
+
+#main1 .main-list a{
+  color: #737373;
+  font-weight: 500;
+}
+
+#main1 .main-list a:hover{
+  color: #fff;
+}
+
+#main1 .main-list dl dd{
+  margin-left: 10px;
+  font-weight: 200;
+  font-size: 14px;
 }

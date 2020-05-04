@@ -6,6 +6,20 @@ $(".label_title").each(function () {
         $(this).append('...');
     }
 });
+
+$(".header-data").each(function () {
+    if ($(this).text().length > 120) {
+        $(this).text($(this).text().substr(0, 120));
+        $(this).append('...');
+    }
+});
+
+$(".content-data").each(function () {
+    if ($(this).text().length > 500) {
+        $(this).text($(this).text().substr(0, 500));
+        $(this).append('...');
+    }
+});
 // Timeline
 
 $.js = function (el) {
@@ -19,7 +33,7 @@ function carousel() {
         dots: true,
         autoplay: false,
         speed: 100,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 2,
         responsive: [
             {
