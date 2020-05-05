@@ -7,7 +7,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Baloo Bhaina 2', cursive;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* @media (min-width: 768px) {
@@ -34,13 +34,13 @@ body{
 #nav-bar{
   top: 0;
   z-index: 10;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  position: sticky;
 }
 
 .navbar{
   margin: 0;
   padding: 0;
-  position: sticky;
   background-color: #1e1e1e;
 }
 
@@ -120,11 +120,24 @@ body{
     width: 100%;
   }
 
+  .fa{
+    width: 30px;
+    height: 30px;
+    padding-right: 40px;
+    font-size: 28px!important;
+  }
+
   /*///*/
 
 
+#main1{
+  margin-top: 80px;
+}
 
 /* Content 1 */
+#content1{
+  margin-top: 60px;
+}
 
 .carousel-item {
   height: 600px;
